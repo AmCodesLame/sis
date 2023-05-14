@@ -45,10 +45,3 @@ export function labStatus(app:any) {
 
     })
 }       
-
-// export function name(app:any) {
-//     app.message('lab', async({message, say} : {message: any; say: any}) =>{
-
-//     })
-// }
-
