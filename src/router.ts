@@ -1,13 +1,6 @@
 import {getApp} from './app'
+import {ping} from './scripts/ping'
 
 let app = getApp();
 
-interface msg {
-  text : string;
-}
-
-app.message('ping', async ({ message, say })=> {
-  console.log(message);
-    await say('pong');
-});
-
+ping(app);

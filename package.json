@@ -18,7 +18,7 @@
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",
     "posttest": "npm.cmd run lint",
-    "start": "npx nodemon --exec npx ts-node ./src/router.ts",
+    "start": "npx nodemon --exec npx ts-node ./src/app.ts",
     "build": "rimraf ./build && tsc"
   },
   "devDependencies": {
