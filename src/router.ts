@@ -1,6 +1,13 @@
-app.message('ping', async ({message, say}) => {
+import {getApp} from './app'
+
+let app = getApp();
+
+interface msg {
+  text : string;
+}
+
+app.message('ping', async ({ message, say })=> {
   console.log(message);
-  await say('pong');
+    await say('pong');
 });
 
-export var bruh = 50;
