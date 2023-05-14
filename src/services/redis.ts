@@ -16,7 +16,7 @@ export async function redisClose() {
   await client.disconnect();
 }
 
-function isReady(): boolean {
+export function isReady(): boolean {
   if (!client.isReady) {
     console.log('[REDIS] Error: client is not ready');
     return false;
