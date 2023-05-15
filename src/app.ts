@@ -3,6 +3,7 @@ dotenv.config();
 
 import {App} from '@slack/bolt';
 import {redisInit, isReady} from './services/redis';
+import {scrapeWorkspace} from './services/storeWorkspace'
 // import * as router from './router';
 
 const app = new App({
@@ -20,6 +21,7 @@ async function init() {
   await app.start(process.env.PORT || 3000);
   console.log('[APP] app is running');
   await redisInit();
+  await scrapeWorkspace(app);
   console.log(isReady());
 }
 

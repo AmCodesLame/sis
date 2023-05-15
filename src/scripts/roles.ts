@@ -78,16 +78,3 @@ export function getRoles(app:any) {
 
 
 
-
-
-
-// import * as red from '../services/redis'
-
-
-// export function name(app:any) {
-//     app.message('lab', async({message, say} : {message: any; say: any}) =>{
-    // const msgObject : {text: string} = JSON.parse(JSON.stringify(message));
-    //     console.log(msgObject)
-    //     const textMsg : string = msgObject.text.toLowerCase();
-//     })
-// }

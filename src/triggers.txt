@@ -4,19 +4,28 @@
     greet:          good night/morning...
     roles:          {bot} <user> is/is not ...
     roles:          {bot} who/who is/who was <user>
+
     birthday:       greet birthday/other occasions
+
     test:           {bot} ping
     test:           {bot} echo <msg>
+
     test:           {bot} fake <event>
+
     help:           {bot} help
     help:           {bot} help <query>
+
     info:           {bot} info <user>
     score:          {bot} score [fxx | bxx | user | proj] -b -p
+
     test:           {bot} rules
     test:           {bot} time
+
     openai:         {bot} gpt <prompt>
     openai:         {bot} dalle <prompt>
+
     score:          name++/-- bxx++/-- fxx++/-- proj++/--
+    
     bkc:            {bot} give me a quote
     bkc:            {bot} life is hell etc
     reminder:       {bot} remind
