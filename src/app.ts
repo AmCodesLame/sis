@@ -3,20 +3,23 @@ dotenv.config();
 
 import {App} from '@slack/bolt';
 import {redisInit, isReady} from './services/redis';
-import {scrapeWorkspace} from './services/storeWorkspace'
-// import * as router from './router';
+import {scrapeWorkspace} from './services/storeWorkspace';
+import * as type from './types';
 
+//create app
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET,
-  socketMode: true, // add this
+  socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
 });
 
-export function getApp() {
+//exporting app for router
+export function appMaker() {
   return app;
 }
 
+//initializing
 async function init() {
   await app.start(process.env.PORT || 3000);
   console.log('[APP] app is running');
@@ -26,6 +29,6 @@ async function init() {
 }
 
 //will run the router file
+import './router';
 
-import './router'
 init();

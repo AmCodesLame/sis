@@ -5,5 +5,11 @@
     "outDir": "build",
     "esModuleInterop": true
   },
-  "include": ["src/**/*.ts", "test/**/*.ts", "src/app.ts", "src/router.ts"]
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "src/app.ts",
+    "src/router.ts",
+    "src/type.ts"
+  ]
 }

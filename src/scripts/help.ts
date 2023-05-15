@@ -1,7 +1,8 @@
 import * as red from '../services/redis';
+import * as type from '../types';
 
 export function help(app: any) {
-  app.message(/^sis help/, async ({message, say}: {message: any; say: any}) => {
+  app.message(/^sis help/, async ({message, say}: type.appMsg) => {
     const msgObject: {text: string} = JSON.parse(JSON.stringify(message));
     console.log(msgObject);
     const textMsg: string = msgObject.text.toLowerCase();
