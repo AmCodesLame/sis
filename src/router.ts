@@ -5,6 +5,7 @@ import {greet, greetRes} from './scripts/greet'
 import {setRoles, getRoles} from './scripts/roles'
 import {newScrape} from './services/storeWorkspace'
 import {info} from './scripts/info'
+import {help} from './scripts/help'
 
 
 let app = getApp();
@@ -19,3 +20,4 @@ setRoles(app);
 getRoles(app);
 newScrape(app);
 info(app)
+help(app)

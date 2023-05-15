@@ -21,7 +21,7 @@ async function init() {
   await app.start(process.env.PORT || 3000);
   console.log('[APP] app is running');
   await redisInit();
-  await scrapeWorkspace(app);
+  await scrapeWorkspace(app, true);
   console.log(isReady());
 }
 
